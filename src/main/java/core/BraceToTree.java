@@ -45,7 +45,7 @@ public class BraceToTree {
 
     //"(( ((1,2,9),0,3,7),4,10) ,5,6,8,11,12)"
     public RefactorNode changeBrace(int pos){
-        
+
         int startPosition=pos;
         int i=pos;
         RefactorNode head=new RefactorNode(null);
@@ -101,11 +101,11 @@ public class BraceToTree {
         if(braceString.charAt(0)=='('&&parenthesesMatch(0)==str.length()-1){
 //            throw new Exception("Format error: Should be surrounded by braces");
             str=str.substring(1,str.length()-1);
-            return changeBrace(0);
+            return changeBrace(4);
         }
         else{
 
-            return changeBrace(0);
+            return changeBrace(4);
         }
 
 
