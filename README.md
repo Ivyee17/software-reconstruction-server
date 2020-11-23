@@ -42,10 +42,10 @@ For the website part of this project, see [here](github.com/ivyee17/software-rec
 
 ## Deployment
 
-1. Open redis with localhost:6387
-2. Open mysql with table username (defined in dao.user)
-3. Make sure server port 8091 is not used by other apps
-4. Load SpringBoot with Java
+1. Open redis with localhost:6379
+2. Open mysql and create table username (as is defined in dao.user)
+3. Check if server port 8091 is not used by other apps (otherwise use another port and set it in application.properties)
+4. Run RedoApplication.java with SpringBoot
 5. Enjoy!
 
 ## References
